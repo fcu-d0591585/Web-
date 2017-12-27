@@ -1,0 +1,96 @@
+<head>
+    <meta charset="UTF-8">
+    <title>學無邊疆，學在偏鄉。</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function(){
+            $(".low").show();
+            $(".mid").hide();
+            $(".top").hide();
+            
+            $("#low_bot").click(function(){
+                    $(".low").show();
+                    $(".mid").hide();
+                    $(".top").hide();
+    });
+            $("#mid_bot").click(function(){
+                    $(".low").hide();
+                    $(".mid").show();
+                    $(".top").hide();
+    });
+            $("#top_bot").click(function(){
+                    $(".low").hide();
+                    $(".mid").hide();
+                    $(".top").show();
+    });
+});
+</script>
+</head>
+<body>
+    <h2 id="main" align="center">
+    <img src="http://i.imgur.com/OPiwnv7.jpg"  width="50%"  onclick="location.href='index.html'">
+        <br>
+    <input type="button" value="認養學校" name="認養學校" style="width:100px;height:30px;"onclick="location.href='school.html'">
+    <input type="button" value="線上測驗" name="線上測驗" style="width:100px;height:30px;"onclick="location.href='test.html'">
+    <input type="button" value="問題討論區" name="問題討論區" style="width:100px;height:30px;"onclick="location.href='forum.html'">
+    <input type="button" value="贊助我們" name="贊助我們" style="width:100px;height:30px;"onclick="location.href='donate.html'">
+    <select name="student">    
+        <option value="stu">學生專區</option>
+        <option value="share">分享生活</option>
+        <option value="search">查詢資源</option>
+        <option value="wants">訴說需求</option>
+    </select>
+    <select name="others">    
+        <option value="other">熱血鄉親</option>
+        <option value="offer">提供課輔</option>
+        <option value="know1">了解需求</option>
+        <option value="activy">舉辦活動</option>
+        <option value="know2">了解資訊</option>
+        <option value="get">師資徵募</option>
+    </select>
+    <!--以上是banner+選單（固定set）-->
+        <table width="100%" border="0">
+            <tr><td width="15%"></td><td width="30%">  
+                <h2 align="center">
+                    <br>排行榜</h2> 
+                <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input name="國一" type="button" value="國一" id="low_bot">&nbsp&nbsp
+                <input name="國二" type="button" value="國二" id="mid_bot">&nbsp&nbsp
+                <input name="國三" type="button" value="國三" id="top_bot"></h1></td>
+                <td width="30%">
+                <h2 align="center">最新消息</h2></td><td></td>
+    <!--以上是「大標題」-->
+        <table width="100%" border="0">
+            <tr><td width="15%"></td><td width="30%">    
+                    <h1 class="low" align="center">1.&nbsp&nbsp&nbsp國一 A&nbsp&nbsp97分</h1>
+                    <h1 class="low" align="center">2.&nbsp&nbsp&nbsp國一 B&nbsp&nbsp90分</h1>
+                    <h1 class="low" align="center">3.&nbsp&nbsp&nbsp國一 C&nbsp&nbsp89分</h1>
+                    <h1 class="mid" align="center">1.&nbsp&nbsp&nbsp國二 A&nbsp&nbsp95分</h1>
+                    <h1 class="mid" align="center">2.&nbsp&nbsp&nbsp國二 B&nbsp&nbsp93分</h1>
+                    <h1 class="mid" align="center">3.&nbsp&nbsp&nbsp國二 C&nbsp&nbsp82分</h1>
+                    <h1 class="top" align="center">1.&nbsp&nbsp&nbsp國三 A&nbsp&nbsp97分</h1>
+                    <h1 class="top" align="center">2.&nbsp&nbsp&nbsp國三 B&nbsp&nbsp94分</h1>
+                    <h1 class="top" align="center">3.&nbsp&nbsp&nbsp國三 C&nbsp&nbsp85分</h1>
+                </td>
+                <td width="60%">
+                    <h1 align="left">     1  這個是最新消息吧啦吧吧  2017.11.11</h1>
+                    <h1 align="left">     2  這個是最新消息吧啦吧吧  2017.11.11</h1>
+                    <h1 align="left">     3  這個是最新消息吧啦吧吧  2017.11.11</h1>   
+                    <h1 align="left"face="DFKai-sb">     4  這個是最新消息吧啦吧吧  2017.11.11</h1>
+                </td>
+                
+            </tr>
+        <table width="100%" border="0">
+            <tr height="60%"><td></td></tr>
+            <tr><td><h1 align="center">活動宣傳——偏鄉音樂祭</h1></td></tr>
+            <tr><td align="center" ><img src="https://i.imgur.com/jish9kl.png" width="80%" ></td></tr>
+            <br><br><br><br><br>
+        <table width="100%" border="0">
+            <tr height="60%"><td></td></tr>
+            <br><br><br><br><br><br>
+            <tr><td><h1 align="center">感謝贊助——緩緩農作</h1></td></tr>
+            <tr><td align="center" ><img src="https://i.imgur.com/J5NWZuK.png" width="80%" ></td></tr>    
+    
+    </h2>
+</body>

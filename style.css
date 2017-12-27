@@ -1,0 +1,14 @@
+h1 {font-family:Microsoft JhengHei;}
+h2 {font-family:Microsoft JhengHei;}
+h3 {font-family:Microsoft JhengHei;}
+h4 {font-family:Microsoft JhengHei;}
+p {font-family:Microsoft JhengHei;}
+input {font-family:Microsoft JhengHei;}
+select {font-family:Microsoft JhengHei;}
+body {background-color: #FFFDE7;}
+head {}
+#banner{
+    margin: 0 auto;
+
+    background-image: url('http://i.imgur.com/OPiwnv7.jpg');
+}
