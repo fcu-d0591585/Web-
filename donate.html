@@ -1,0 +1,74 @@
+<head>
+    <meta charset="UTF-8">
+    <title>學無邊疆，學在偏鄉。</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        function processFormData() {
+
+        //getElementsName
+        var name_element = document.getElementById('name');
+        var name = name_element.value;
+        var whatWantToSay_element = document.getElementById('whatWantToSay');
+        var whatWantToSay =whatWantToSay_element.value;
+        alert('公司名稱：' + name + '\n想說的話：' + whatWantToSay + '\n\n贊助成功！');
+        // + name + '\n想說的話：'
+}
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body align="center">
+
+    <h2>
+        <img src="http://i.imgur.com/OPiwnv7.jpg"  width="50%"  onclick="location.href='index.html'">
+    <br>
+
+        <input type="button" value="認養學校" name="認養學校" style="width:100px;height:30px;"onclick="location.href='school.html'">
+        <input type="button" value="線上測驗" name="線上測驗" style="width:100px;height:30px;"onclick="location.href='test.html'">
+        <input type="button" value="問題討論區" name="問題討論區" style="width:100px;height:30px;"onclick="location.href='forum.html'">
+        <input type="button" value="贊助我們" name="贊助我們" style="width:100px;height:30px;"onclick="location.href='donate.html'">
+        <select name="student">    
+        <option value="stu">學生專區</option>
+        <option value="share">分享生活</option>
+        <option value="search">查詢資源</option>
+        <option value="wants">訴說需求</option>
+        </select>
+        <select name="others">    
+        <option value="other">熱血鄉親</option>
+        <option value="offer">提供課輔</option>
+        <option value="know1">了解需求</option>
+        <option value="activy">舉辦活動</option>
+        <option value="know2">了解資訊</option>
+        <option value="get">師資徵募</option>
+        </select>
+        <!--以上是banner+選單（固定set）-->
+        <br><br>
+        <table width="100%" border="0">
+            <tr><td align="center"><h1>我要贊助</h1></td></tr>
+        </table>
+        <!--以上是「大標題」-->
+        <table width="100%">
+            <td width="20%">
+            </td>
+            <td width="50%">
+                
+                <h4>如欲捐款，請匯款至以下帳戶：——————————————</h4>
+                <h4>如欲捐贈物資，請寄送至以下地址：————————————————</h4>
+                <h4>輸入贊助單位名稱：<input type="text" name="單位名稱" id="name"></h4>
+                <h4>上傳貴單位logo：<input type="file" name="選擇檔案" id="logo"></h4>
+                <h4>上傳捐贈證明：<input type="file" name="選擇檔案" id="proof"></h4>
+                <h4>有話想說：<br>
+                <textarea style="width:300px;height:100px;" id="whatWantToSay">請輸入你想要說的內容.....</textarea>
+                </h4>
+                <input type="submit" value="Submit" onclick="processFormData()">
+            
+            </td>
+            <td width="30%">
+                    
+            </td>
+        </table>
+
+    </h2>
+
+</body>
