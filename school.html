@@ -1,4 +1,11 @@
 <head>
+
+    <!-- boot strap start -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 使用 RWD 功能 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> <!-- 載入 Bootstrap -->
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"> <!-- Bootstrap 的 RWD 套件 -->
+    <!-- boot strap end -->
+    
     <meta charset="UTF-8">
     <title>學無邊疆，學在偏鄉。</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -7,34 +14,32 @@
 
 
 <body>
-    <h2 id="main" align="center">
-    <img src="http://i.imgur.com/OPiwnv7.jpg"  width="50%"  onclick="location.href='index.html'">
+    <div class="row" align="center">
+        <div class="col-xs-12" ><img src="http://i.imgur.com/OPiwnv7.jpg"  width="50%"  onclick="location.href='index.html'">
+        </div>
+        <br>
+    </div>
+    
+    <div class="col-xs-12" align="center">
+            <input type="button" class="btn btn-outline-dark" value="認養學校" name="認養學校" onclick="location.href='school.html'">
+            <input type="button" class="btn btn-outline-dark" value="線上測驗" name="線上測驗" onclick="location.href='test.html'">
+            <input type="button" class="btn btn-outline-dark" value="問題討論區" name="問題討論區" onclick="location.href='forum.html'">
+            <input type="button" class="btn btn-outline-dark" value="贊助我們" name="贊助我們" onclick="location.href='donate.html'">
+    </div>
+                
+    <!--以上是banner+選單（固定set）-->
+
     <br>
-<!--上面img是banner，至中、大小縮為一半-->
-    <input type="button" value="認養學校" name="認養學校" style="width:100px;height:30px;"onclick="location.href='school.html'">
-    <input type="button" value="線上測驗" name="線上測驗" style="width:100px;height:30px;"onclick="location.href='test.html'">
-    <input type="button" value="問題討論區" name="問題討論區" style="width:100px;height:30px;"onclick="location.href='forum.html'">
-    <input type="button" value="贊助我們" name="贊助我們" style="width:100px;height:30px;"onclick="location.href='donate.html'">
-    <select name="student">    
-        <option value="stu">學生專區</option>
-        <option value="share">分享生活</option>
-        <option value="search">查詢資源</option>
-        <option value="wants">訴說需求</option>
-    </select>
-    <select name="others">    
-        <option value="other">熱血鄉親</option>
-        <option value="offer">提供課輔</option>
-        <option value="know1">了解需求</option>
-        <option value="activy">舉辦活動</option>
-        <option value="know2">了解資訊</option>
-        <option value="get">師資徵募</option>
-    </select>
-<!--以上是banner+選單（固定set）-->
-    <br><br>
-    <table width="100%" border="0">
-        <tr><td align="center"><h1>認養學校</h1></td></tr>
-    </table>
-<!--以上是「大標題」-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9">
+                <h1>認養學校</h1>
+                <br>
+            </div>
+        </div>
+    </div>
     <table width="100%" border="0">
         <td width="20%"></td>
             <td align="left" width="5%">    
@@ -56,24 +61,24 @@
         <td width="20%"></td>
         <td width="23%"> <img src="https://i.imgur.com/O0NtdiE.jpg" width="100%"></td>
         <td width="57%"> 
-            <h3>ＯＯ縣/市 ＯＯ國中</h3>
-            <h3>地址：ＯＯ縣ＯＯ區ＯＯＯ路ＯＯ號</h3>
-            <h3>介紹：這是介紹吧啦吧吧吧～</h3>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h3>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h3>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最後一次贊助日期:201x.xx.xx.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="我要贊助" onclick="location.href='donate.html'"></h3>
+            <h5>ＯＯ縣/市 ＯＯ國中</h5>
+            <h5>地址：ＯＯ縣ＯＯ區ＯＯＯ路ＯＯ號</h5>
+            <h5>介紹：這是介紹吧啦吧吧吧～</h5>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h5>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h5>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最後一次贊助日期:201x.xx.xx.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="我要贊助" onclick="location.href='donate.html'"></h5>
         </td>
     <table width="100%" height="30%" border="0">
         <br>
         <td width="20%"></td>
         <td width="23%"> <img src="https://i.imgur.com/6beTPuj.jpg" width="100%"></td>
         <td width="57%"> 
-            <h3>ＯＯ縣/市 ＯＯ國中</h3>
-            <h3>地址：ＯＯ縣ＯＯ區ＯＯＯ路ＯＯ號</h3>
-            <h3>介紹：這是介紹吧啦吧吧吧～</h3>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h3>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h3>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最後一次贊助日期:201x.xx.xx.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="我要贊助" onclick="location.href='donate.html'"></h3>
+            <h5>ＯＯ縣/市 ＯＯ國中</h5>
+            <h5>地址：ＯＯ縣ＯＯ區ＯＯＯ路ＯＯ號</h5>
+            <h5>介紹：這是介紹吧啦吧吧吧～</h5>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h5>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h5>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最後一次贊助日期:201x.xx.xx.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="我要贊助" onclick="location.href='donate.html'"></h5>
         </td>
         
         <table width="100%" height="30%" border="0">
@@ -81,12 +86,12 @@
         <td width="20%"></td>
         <td width="23%"> <img src="https://i.imgur.com/4EwTgus.jpg" width="100%"></td>
         <td width="57%"> 
-            <h3>ＯＯ縣/市 ＯＯ國中</h3>
-            <h3>地址：ＯＯ縣ＯＯ區ＯＯＯ路ＯＯ號</h3>
-            <h3>介紹：這是介紹吧啦吧吧吧～</h3>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h3>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h3>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最後一次贊助日期:201x.xx.xx.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="我要贊助" onclick="location.href='donate.html'"></h3>
+            <h5>ＯＯ縣/市 ＯＯ國中</h5>
+            <h5>地址：ＯＯ縣ＯＯ區ＯＯＯ路ＯＯ號</h5>
+            <h5>介紹：這是介紹吧啦吧吧吧～</h5>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h5>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這是介紹吧啦吧吧吧～</h5>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最後一次贊助日期:201x.xx.xx.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="我要贊助" onclick="location.href='donate.html'"></h5>
         </td>
     </h2>
 </body>
