@@ -1,38 +1,44 @@
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 使用 RWD 功能 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> <!-- 載入 Bootstrap -->
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"> <!-- Bootstrap 的 RWD 套件 -->
+
     <meta charset="big-5">
     <title>學無邊疆，學在偏鄉。</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body background="http://pic1.16pic.com/00/24/44/16pic_2444697_b.jpg">
-</body>
-<h2 id="main" align="center">
-    <img src="http://i.imgur.com/OPiwnv7.jpg"  width="50%"  onclick="location.href='index.html'">
+    <div class="row" align="center">
+            <div class="col-xs-12" ><img src="http://i.imgur.com/OPiwnv7.jpg"  width="50%"  onclick="location.href='index.html'">
+            </div>
+            <br>
+        </div>
+        
+        <div class="col-xs-12" align="center">
+                <input type="button" class="btn btn-outline-dark" value="認養學校" name="認養學校" onclick="location.href='school.html'">
+                <input type="button" class="btn btn-outline-dark" value="線上測驗" name="線上測驗" onclick="location.href='test.html'">
+                <input type="button" class="btn btn-outline-dark" value="問題討論區" name="問題討論區" onclick="location.href='forum.html'">
+                <input type="button" class="btn btn-outline-dark" value="贊助我們" name="贊助我們" onclick="location.href='donate.html'">
+    </div>
     <br>
-    <input type="button" value="認養學校" name="認養學校" style="width:100px;height:30px;"onclick="location.href='school.html'">
-    <input type="button" value="線上測驗" name="線上測驗" style="width:100px;height:30px;"onclick="location.href='test.html'">
-    <input type="button" value="問題討論區" name="問題討論區" style="width:100px;height:30px;"onclick="location.href='forum.html'">
-    <input type="button" value="贊助我們" name="贊助我們" style="width:100px;height:30px;"onclick="location.href='donate.html'">
-    <select name="student">    
-        <option value="stu">學生專區</option>
-        <option value="share">分享生活</option>
-        <option value="search">查詢資源</option>
-        <option value="wants">訴說需求</option>
-    </select>
-    <select name="others">    
-        <option value="other">熱血鄉親</option>
-        <option value="offer">提供課輔</option>
-        <option value="know1">了解需求</option>
-        <option value="activy">舉辦活動</option>
-        <option value="know2">了解資訊</option>
-        <option value="get">師資徵募</option>
-    </select>
-    <br><br>
-    <table width="100%" border="0">
-        <tr><td align="center"><h1>線上測驗</h1></td></tr>
-    <table width="100%" border="0">
-        <td width="1%"></td>
-           <td align="left" width="11%"> 
-            
-      <h3>(1) 1+1=?</h3>
-     
+    <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9">
+                <h1>線上測驗</h1>
+            </div>
+        </div>
+    <h2 id="main" align="center">
+    
+        
+    
+        
+        
+        <table width="100%" border="0">
+            <td width="1%"></td>
+               <td align="left" width="11%"> 
+                
+          <h3>(1) 1+1=?</h3>
+         
+    
+</body>
