@@ -22,101 +22,128 @@
                 <input type="button" class="btn btn-outline-dark" value="問題討論區" name="問題討論區" onclick="location.href='forum.html'">
                 <input type="button" class="btn btn-outline-dark" value="贊助我們" name="贊助我們" onclick="location.href='donate.html'">
     </div>
+    
     <br>
+
     <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-9">
-                <h1>線上測驗</h1>
-            </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            <h1>線上測驗</h1>
         </div>
-    <h2 id="main" align="center">
+     </div>
     
-        
-    
-        
-        
-        <table width="100%" border="0">
-            <td width="1%"></td>
-               <td align="left" width="11%"> 
-                
-           
-          
-        
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
             
-            
-          
-          
-          <h3>1. 下列文句所表達的意思,何者與其他三者明顯不同</h3>
-          <h3>(A) 誰愛你們,是我!</h3>
-          <h3>(B) 你們,是我所愛!,</h3>
-          <h3>(C) 愛你們的,是我?</h3>
-          <h3>(D) 你們,我豈不愛?</h3>
-         
-          <select name="answer1">
-                <option value="default">請選擇答案</option>
-                <option value="A1">A</option>
-                <option value="B1">B</option>
-                <option value="C1">C</option>
-                <option value="D1">D</option>
-            </select>
-         
-         <h3>2. 下列何者不是自謙之詞?</h3>
-         <h3>(A) 貴府</h3>
-         <h3>(B) 寒舍</h3>
-         <h3>(C) 薄酒</h3>
-         <h3>(D) 小女</h3>
-    
-         <select name="answer2">
-                <option value="default">請選擇答案</option>
-                <option value="A2">A</option>
-                <option value="B2">B</option>
-                <option value="C2">C</option>
-                <option value="D2">D</option>
-            </select>
-     
-     <h3>3. 下列詞語中的數字 何者為實際數字?</h3>
-         <h3>(A) 自成一家之言</h3>
-         <h3>(B) 如墜五里霧之中</h3>
-         <h3>(C) 八千里路雲和月</h3>
-         <h3>(D) 百足之蟲 死而不僵</h3>
-   
-   <select name="answer3">
-                <option value="default">請選擇答案</option>
-                <option value="A3">A</option>
-                <option value="B3">B</option>
-                <option value="C3">C</option>
-                <option value="D3">D</option>
-            </select>
+
+            <h3>1. 下列文句所表達的意思,何者與其他三者明顯不同</h3>
+            <h3>(A) 誰愛你們,是我!</h3>
+            <h3>(B) 你們,是我所愛!,</h3>
+            <h3>(C) 愛你們的,是我?</h3>
+            <h3>(D) 你們,我豈不愛?</h3>
        
-       <h3>4. 下列何者人 可能最累人累己?</h3>
-         <h3>(A) 仰賴祖產度日, 又愛好嬉遊的富家子弟</h3>
-         <h3>(B) 不懂農業生產之道, 只管業務行銷的商人</h3>
-         <h3>(C) 不計旅費是多是少, 都堅持要行萬里路的人</h3>
-         <h3>(D) 冷落待產的妻子, 只管在外交際應酬的丈夫</h3>
-    
-    <select name="answer4">
-                <option value="default">請選擇答案</option>
-                <option value="A4">A</option>
-                <option value="B4">B</option>
-                <option value="C4">C</option>
-                <option value="D4">D</option>
+            <select id="answer1">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=0>B</option>
+                <option value=1>C</option>
+                <option value=0>D</option>
             </select>
-    
-        
-        <h3>5. 公道世間唯白髮 貴人頭上不曾饒 與下列何者最接近?</h3>
-         <h3>(A) 達官貴人心理的皺紋比他們臉上的還要多</h3>
-         <h3>(B) 時間是公正的法官, 他一視同仁地對待所有人</h3>
-         <h3>(C) 歲月是絕對公平的, 他給你一些 也帶走一些</h3>
-         <h3>(D) 頂上白髮催人老, 極易引發內心的憂懼與徬徨</h3>
-    
+            <br><br>
+       
+            <h3>2. 下列何者不是自謙之詞?</h3>
+            <h3>(A) 貴府</h3>
+            <h3>(B) 寒舍</h3>
+            <h3>(C) 薄酒</h3>
+            <h3>(D) 小女</h3>
+  
+            <select id="answer2">
+              <option value=0>請選擇答案</option>
+              <option value=1>A</option>
+              <option value=0>B</option>
+              <option value=0>C</option>
+              <option value=0>D</option>
+            </select>
+            <br><br>
+   
+            <h3>3. 下列詞語中的數字 何者為實際數字?</h3>
+            <h3>(A) 自成一家之言</h3>
+            <h3>(B) 如墜五里霧之中</h3>
+            <h3>(C) 八千里路雲和月</h3>
+            <h3>(D) 百足之蟲 死而不僵</h3>
+ 
+            <select id="answer3">
+                <option value=0>請選擇答案</option>
+                <option value=1>A</option>
+                <option value=0>B</option>
+                <option value=0>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
      
-     <select name="answer5">
-                <option value="default">請選擇答案</option>
-                <option value="A5">A</option>
-                <option value="B5">B</option>
-                <option value="C5">C</option>
-                <option value="D5">D</option>
+            <h3>4. 下列何者人 可能最累人累己?</h3>
+            <h3>(A) 仰賴祖產度日, 又愛好嬉遊的富家子弟</h3>
+            <h3>(B) 不懂農業生產之道, 只管業務行銷的商人</h3>
+            <h3>(C) 不計旅費是多是少, 都堅持要行萬里路的人</h3>
+            <h3>(D) 冷落待產的妻子, 只管在外交際應酬的丈夫</h3>
+  
+            <select id="answer4">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=1>B</option>
+                <option value=0>C</option>
+                <option value=0>D</option>
             </select>
+            <br><br>
+  
+      
+            <h3>5. 公道世間唯白髮 貴人頭上不曾饒 與下列何者最接近?</h3>
+            <h3>(A) 達官貴人心理的皺紋比他們臉上的還要多</h3>
+            <h3>(B) 時間是公正的法官, 他一視同仁地對待所有人</h3>
+            <h3>(C) 歲月是絕對公平的, 他給你一些 也帶走一些</h3>
+            <h3>(D) 頂上白髮催人老, 極易引發內心的憂懼與徬徨</h3>
+  
+   
+            <select id="answer5">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=0>B</option>
+                <option value=0>C</option>
+                <option value=1>D</option>
+            </select>
+            <br><br>
+            <input type="submit" onclick="submit()">
+            
+            <script>
+
+                function submit(){
+                    var sum = 0;
+                    
+                    sum = parseInt(document.getElementById("answer1").value) + 
+                        parseInt(document.getElementById("answer2").value) +
+                        parseInt(document.getElementById("answer3").value) +
+                        parseInt(document.getElementById("answer4").value) +
+                        parseInt(document.getElementById("answer5").value);
+                    alert("答對題數：" + sum);
+                }
+            
+            </script>
+            
+        </div>
+     </div>    
+    
+    
+
+        
+          
+        
+            
+            
+          
+          
+
  
 
 
