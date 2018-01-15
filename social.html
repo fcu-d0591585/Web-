@@ -1,0 +1,135 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 使用 RWD 功能 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> <!-- 載入 Bootstrap -->
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"> <!-- Bootstrap 的 RWD 套件 -->
+
+    <meta charset="big-5">
+    <title>學無邊疆，學在偏鄉。</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="http://pic1.16pic.com/00/24/44/16pic_2444697_b.jpg">
+    <div class="row" align="center">
+            <div class="col-xs-12" ><img src="http://i.imgur.com/OPiwnv7.jpg"  width="50%"  onclick="location.href='index.html'">
+            </div>
+            <br>
+        </div>
+        
+        <div class="col-xs-12" align="center">
+                <input type="button" class="btn btn-outline-dark" value="認養學校" name="認養學校" onclick="location.href='school.html'">
+                <input type="button" class="btn btn-outline-dark" value="線上測驗" name="線上測驗" onclick="location.href='test.html'">
+                <input type="button" class="btn btn-outline-dark" value="問題討論區" name="問題討論區" onclick="location.href='forum.html'">
+                <input type="button" class="btn btn-outline-dark" value="贊助我們" name="贊助我們" onclick="location.href='donate.html'">
+    </div>
+    
+    <br>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            <h1>線上測驗</h1>
+        </div>
+     </div>
+    
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            
+
+            <h3>1.  北韓的飢荒問題與下列何者自然因素最有關</h3>
+            <h3>(A) 颱風太多</h3>
+            <h3>(B) 生長季短,平原少</h3>
+            <h3>(C) 火山活動與地震多</h3>
+            <h3>(D) 年雨量少於500ml</h3>
+       
+            <select id="answer1">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=1>B</option>
+                <option value=0>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
+       
+            <h3>2. 台北地區大量開發山坡地,各種被植披保護的山地已變成工廠 台北地區可能導致哪種現象</h3>
+            <h3>(A) 地層下陷趨緩</h3>
+            <h3>(B) 淹水機率增加</h3>
+            <h3>(C) 地下含水量增加</h3>
+            <h3>(D) 河川流量穩定</h3>
+  
+            <select id="answer2">
+              <option value=0>請選擇答案</option>
+              <option value=0>A</option>
+              <option value=1>B</option>
+              <option value=0>C</option>
+              <option value=0>D</option>
+            </select>
+            <br><br>
+   
+            <h3>3. 非洲生活非常原始,當生產活動造成土地肥力衰竭,便將該地棄置,尋找另外一塊林地生活, 上文主要在描述何種生活方式</h3>
+            <h3>(A) 林木加工業</h3>
+            <h3>(B) 逐水草而居</h3>
+            <h3>(C) 採集與狩獵</h3>
+            <h3>(D) 粗放的游耕</h3>
+ 
+            <select id="answer3">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=0>B</option>
+                <option value=0>C</option>
+                <option value=1>D</option>
+            </select>
+            <br><br>
+     
+            <h3>4. 有本書裡面包含人文主義運動,方言文學,天才藝術家 此書可能是何者</h3>
+            <h3>(A) 第三世界</h3>
+            <h3>(B) 文藝復興時代</h3>
+            <h3>(C) 羅馬帝國興亡史</h3>
+            <h3>(D) 歐洲封建制度</h3>
+  
+            <select id="answer4">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=1>B</option>
+                <option value=0>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
+  
+      
+            <h3>5. 鄭成功來台時發現糧食不夠,他採取哪種方法解決此困境?</h3>
+            <h3>(A) 分派軍頓屯墾各地</h3>
+            <h3>(B) 管制外來人口移入</h3>
+            <h3>(C) 成立郊商運送貨物</h3>
+            <h3>(D) 設市舶司管理貿易</h3>
+  
+   
+            <select id="answer5">
+                <option value=0>請選擇答案</option>
+                <option value=1>A</option>
+                <option value=0>B</option>
+                <option value=0>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
+            <input type="submit" onclick="submit()">
+            
+            <script>
+                function submit(){
+                    var sum = 0;
+                    
+                    sum = parseInt(document.getElementById("answer1").value) + 
+                        parseInt(document.getElementById("answer2").value) +
+                        parseInt(document.getElementById("answer3").value) +
+                        parseInt(document.getElementById("answer4").value) +
+                        parseInt(document.getElementById("answer5").value);
+                    alert("答對題數：" + sum);
+                }
+            
+            </script>
+            
+        </div>
+     </div>    
+</body>
