@@ -1,0 +1,135 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 使用 RWD 功能 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> <!-- 載入 Bootstrap -->
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"> <!-- Bootstrap 的 RWD 套件 -->
+
+    <meta charset="big-5">
+    <title>學無邊疆，學在偏鄉。</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="http://pic1.16pic.com/00/24/44/16pic_2444697_b.jpg">
+    <div class="row" align="center">
+            <div class="col-xs-12" ><img src="http://i.imgur.com/OPiwnv7.jpg"  width="50%"  onclick="location.href='index.html'">
+            </div>
+            <br>
+        </div>
+        
+        <div class="col-xs-12" align="center">
+                <input type="button" class="btn btn-outline-dark" value="認養學校" name="認養學校" onclick="location.href='school.html'">
+                <input type="button" class="btn btn-outline-dark" value="線上測驗" name="線上測驗" onclick="location.href='test.html'">
+                <input type="button" class="btn btn-outline-dark" value="問題討論區" name="問題討論區" onclick="location.href='forum.html'">
+                <input type="button" class="btn btn-outline-dark" value="贊助我們" name="贊助我們" onclick="location.href='donate.html'">
+    </div>
+    
+    <br>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            <h1>線上測驗</h1>
+        </div>
+     </div>
+    
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            
+
+            <h3>1.  有關組成地球大氣氣體的敘述,下列何者正確?</h3>
+            <h3>(A) 大氣中氮的含量僅次於氧</h3>
+            <h3>(B) 大氣中甲烷是一種溫室氣體</h3>
+            <h3>(C) 大氣中氧氣減少是造成臭氧洞的主要原因</h3>
+            <h3>(D) 雲和雨的主要成分是氧氣</h3>
+       
+            <select id="answer1">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=1>B</option>
+                <option value=0>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
+       
+            <h3>2. 台灣天氣的敘述何者正確?</h3>
+            <h3>(A) 冬季吹西南季風</h3>
+            <h3>(B) 夏季吹西北季風</h3>
+            <h3>(C) 颱風發生秋季兩季</h3>
+            <h3>(D) 梅雨發生在九月和十月</h3>
+  
+            <select id="answer2">
+              <option value=0>請選擇答案</option>
+              <option value=0>A</option>
+              <option value=0>B</option>
+              <option value=1>C</option>
+              <option value=0>D</option>
+            </select>
+            <br><br>
+   
+            <h3>3. 下列何者不是造成二氧化碳增加的原因?</h3>
+            <h3>(A) 氟氯碳化物的大量使用</h3>
+            <h3>(B) 大量砍伐森林</h3>
+            <h3>(C) 人口增加和汽機車的使用</h3>
+            <h3>(D) 以石油和天然氣為燃料的工業大幅成長</h3>
+ 
+            <select id="answer3">
+                <option value=0>請選擇答案</option>
+                <option value=1>A</option>
+                <option value=0>B</option>
+                <option value=0>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
+     
+            <h3>4. 蛋白質會在哪個器官被消化?</h3>
+            <h3>(A) 肝臟</h3>
+            <h3>(B) 膽囊</h3>
+            <h3>(C) 大腸</h3>
+            <h3>(D) 小腸</h3>
+  
+            <select id="answer4">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=1>B</option>
+                <option value=0>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
+  
+      
+            <h3>5. 36g的X和足量的Y恰可反應成48g的X2Y,且無剩餘的X,下列何者也可生成X2Y X也剛好用完?</h3>
+            <h3>(A) 8g的X,4g的Y</h3>
+            <h3>(B) 12g的X,2g的Y</h3>
+            <h3>(C) 54g的X,18g的Y</h3>
+            <h3>(D) 72g的X,48g的Y</h3>
+  
+   
+            <select id="answer5">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=0>B</option>
+                <option value=1>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
+            <input type="submit" onclick="submit()">
+            
+            <script>
+                function submit(){
+                    var sum = 0;
+                    
+                    sum = parseInt(document.getElementById("answer1").value) + 
+                        parseInt(document.getElementById("answer2").value) +
+                        parseInt(document.getElementById("answer3").value) +
+                        parseInt(document.getElementById("answer4").value) +
+                        parseInt(document.getElementById("answer5").value);
+                    alert("答對題數：" + sum);
+                }
+            
+            </script>
+            
+        </div>
+     </div>    
+</body>
