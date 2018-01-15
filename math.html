@@ -1,0 +1,135 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 使用 RWD 功能 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> <!-- 載入 Bootstrap -->
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"> <!-- Bootstrap 的 RWD 套件 -->
+
+    <meta charset="big-5">
+    <title>學無邊疆，學在偏鄉。</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="http://pic1.16pic.com/00/24/44/16pic_2444697_b.jpg">
+    <div class="row" align="center">
+            <div class="col-xs-12" ><img src="http://i.imgur.com/OPiwnv7.jpg"  width="50%"  onclick="location.href='index.html'">
+            </div>
+            <br>
+        </div>
+        
+        <div class="col-xs-12" align="center">
+                <input type="button" class="btn btn-outline-dark" value="認養學校" name="認養學校" onclick="location.href='school.html'">
+                <input type="button" class="btn btn-outline-dark" value="線上測驗" name="線上測驗" onclick="location.href='test.html'">
+                <input type="button" class="btn btn-outline-dark" value="問題討論區" name="問題討論區" onclick="location.href='forum.html'">
+                <input type="button" class="btn btn-outline-dark" value="贊助我們" name="贊助我們" onclick="location.href='donate.html'">
+    </div>
+    
+    <br>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            <h1>線上測驗</h1>
+        </div>
+     </div>
+    
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            
+
+            <h3>1.  下列那個時間最長</h3>
+            <h3>(A) 15分</h3>
+            <h3>(B) 4/11小時</h3>
+            <h3>(C) 0.3小時</h3>
+            <h3>(D) 1020秒</h3>
+       
+            <select id="answer1">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=1>B</option>
+                <option value=0>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
+       
+            <h3>2. 下列何者是0.000815的科學記號</h3>
+            <h3>(A) 8.15*10^-3</h3>
+            <h3>(B) 8.15*10^-4</h3>
+            <h3>(C) 815*10-3</h3>
+            <h3>(D) 815*10^-6</h3>
+  
+            <select id="answer2">
+              <option value=0>請選擇答案</option>
+              <option value=0>A</option>
+              <option value=1>B</option>
+              <option value=0>C</option>
+              <option value=0>D</option>
+            </select>
+            <br><br>
+   
+            <h3>3. 下列何者為5x^2+17x-12的因式</h3>
+            <h3>(A) x+1</h3>
+            <h3>(B) x-1</h3>
+            <h3>(C) x+4</h3>
+            <h3>(D) x-4</h3>
+ 
+            <select id="answer3">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=0>B</option>
+                <option value=1>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
+     
+            <h3>4. 解二元一次聯立方程式 8x+6y=3,6x-4y=5 y=?</h3>
+            <h3>(A) -11/2</h3>
+            <h3>(B) -2/17</h3>
+            <h3>(C) -2/34</h3>
+            <h3>(D) -11/34</h3>
+  
+            <select id="answer4">
+                <option value=0>請選擇答案</option>
+                <option value=0>A</option>
+                <option value=0>B</option>
+                <option value=0>C</option>
+                <option value=1>D</option>
+            </select>
+            <br><br>
+  
+      
+            <h3>5. 下列哪組全距最小</h3>
+            <h3>(A) 13,15,11,12,15,11,15</h3>
+            <h3>(B) 6,9,8,7,9,9,8,5,4</h3>
+            <h3>(C) 5,4,5,7,1,7,8,7,4</h3>
+            <h3>(D) 17,11,10,9,5,4,4,3</h3>
+  
+   
+            <select id="answer5">
+                <option value=0>請選擇答案</option>
+                <option value=1>A</option>
+                <option value=0>B</option>
+                <option value=0>C</option>
+                <option value=0>D</option>
+            </select>
+            <br><br>
+            <input type="submit" onclick="submit()">
+            
+            <script>
+                function submit(){
+                    var sum = 0;
+                    
+                    sum = parseInt(document.getElementById("answer1").value) + 
+                        parseInt(document.getElementById("answer2").value) +
+                        parseInt(document.getElementById("answer3").value) +
+                        parseInt(document.getElementById("answer4").value) +
+                        parseInt(document.getElementById("answer5").value);
+                    alert("答對題數：" + sum);
+                }
+            
+            </script>
+            
+        </div>
+     </div>    
+</body>
